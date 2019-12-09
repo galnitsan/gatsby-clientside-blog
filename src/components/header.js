@@ -5,6 +5,8 @@ import React from "react"
 const Header = ({ siteTitle }) => (
   <header
     style={{
+      textAlign:"center",
+      direction: 'right',
       background: `rebeccapurple`,
       marginBottom: `1.45rem`,
     }}
