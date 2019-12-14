@@ -3,6 +3,7 @@ title: 'פוסט שני - HTML'
 date: 2019-12-03 13:30:00
 author: 'גל ניצן'
 path: '/second-post'
+image: ./html.jpg
 ---
 
 היום נכתוב על `HTML` ונראה דוגמא.

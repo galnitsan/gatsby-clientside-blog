@@ -32,7 +32,7 @@ const Layout = ({ children }) => {
         <footer className="rtl_footer">
            נבנה בעזרת
           {` `} 
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          <a href="https://www.gatsbyjs.org"> React && Gatsby</a>
           
             
         </footer>

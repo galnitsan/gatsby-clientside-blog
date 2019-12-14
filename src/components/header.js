@@ -30,6 +30,9 @@ const Header = ( props ) => {
             <NavItem>
               <NavLink href="/tags/">תגיות</NavLink>
             </NavItem>
+            <NavItem>
+              <NavLink href="/about/">פרוייקטים</NavLink>
+            </NavItem>
           </Nav>
         </Collapse>
     </div>
