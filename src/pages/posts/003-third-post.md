@@ -3,7 +3,10 @@ title: 'טבלת HTML'
 date: 2019-12-05 17:30:00
 author: 'גל ניצן'
 path: '/third-post'
-image: ./html-table.jpg
+image: html-table.jpg
+tags: 
+- html
+- html table
 ---
 
 טבלה ב HTML מוגדרת עם תגית `<table>` .
