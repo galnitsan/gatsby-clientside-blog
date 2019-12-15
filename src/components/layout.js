@@ -10,6 +10,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
+import Footer from './Footer'
 import '../styles/index.scss'
 
 
@@ -33,10 +34,9 @@ const Layout = ({ children }) => {
            נבנה בעזרת
           {` `} 
           <a href="https://www.gatsbyjs.org"> React && Gatsby</a>
-          
-            
         </footer>
       </div>
+      <Footer />
     </>
   )
 }

@@ -7,6 +7,7 @@ image: html-table.jpg
 tags: 
 - html
 - html table
+- recommended
 ---
 
 טבלה ב HTML מוגדרת עם תגית `<table>` .
