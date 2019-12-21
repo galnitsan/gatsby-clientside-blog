@@ -25,7 +25,7 @@ const Header = ( props ) => {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
-              <NavLink href="/about/">אודותיי</NavLink>
+              <NavLink style={{padding: "1rem 1rem"}} href="/about/">אודותיי</NavLink>
             </NavItem>
             <NavItem>
               <NavLink href="/tags/">תגיות</NavLink>
