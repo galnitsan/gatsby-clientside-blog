@@ -1,8 +1,7 @@
 ---
-title: 'פוסט ראשון - הכרות'
+title: 'Introduction'
 date: 2019-12-02 08:00:00
 author: 'גל ניצן'
-path: '/first-post'
 image: intro.jpg
 tags: 
 - frontend

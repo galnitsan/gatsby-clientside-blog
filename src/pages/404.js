@@ -1,13 +1,13 @@
 import React from "react"
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import { Link } from 'gatsby'
 
 const NotFoundPage = () => (
-  <Layout>
+  <Layout pageTitle="אופס, כנראה שיש תקלה..">
     <SEO title="404: Not found" />
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+    <p style={{textAlign:"right"}}>הקלדת או לחצת על עמוד שכנראה לא קיים או שקיימת תקלה טכנית. עמנו הסליחה.</p>
+    <Link  className="button_404 btn btn-primary" to={'/'}>חזור לעמוד הבית</Link>
   </Layout>
 )
 

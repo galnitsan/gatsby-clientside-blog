@@ -1,8 +1,7 @@
 ---
-title: 'טבלת HTML'
+title: 'HTML Table'
 date: 2019-12-05 17:30:00
 author: 'גל ניצן'
-path: '/third-post'
 image: html-table.jpg
 tags: 
 - html

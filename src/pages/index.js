@@ -8,11 +8,8 @@ import { Row, Col } from 'reactstrap'
 import Sidebar from '../components/Sidebar'
 
 const IndexPage = () => (
-  <Layout>
+  <Layout pageTitle="ClientSide.blog">
     <SEO title="Home" />
-    <h1>עמוד הבית</h1>
-    <Row>
-      <Col md="8">
       <StaticQuery query={indexQuery} render={data => {
       return (
         <div>
@@ -21,23 +18,16 @@ const IndexPage = () => (
              key={node.id}
              title={node.frontmatter.title}
              author={node.frontmatter.author}
-             path={node.frontmatter.path}
+             slug={node.fields.slug}
              date={node.frontmatter.date}
              body={node.excerpt}
              fluid={node.frontmatter.image.childImageSharp.fluid}
              tags={node.frontmatter.tags}
-             //tags={node.frontmatter.tags}
             />
           ))}
         </div>
       )
     }}/>
-      </Col>
-      <Col md="4">
-        <Sidebar />
-      </Col>
-    </Row>
-   
   </Layout>
 )
 
@@ -51,7 +41,6 @@ query {
           title
           date(formatString: "DD/MM/YYYY")
           author
-          path
           tags
           image {
             childImageSharp {
@@ -60,6 +49,9 @@ query {
               }
             }
           }
+        }
+        fields{
+          slug
         }
         excerpt
       }

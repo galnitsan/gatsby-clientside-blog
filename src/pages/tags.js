@@ -1,12 +1,11 @@
 import React from "react"
-import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const TagsPage = () => (
-  <Layout>
+  <Layout pageTitle="כל התגיות באתר">
     <SEO title="Tags" />
-    <h1>תגיות</h1>
+    <p style={{textAlign:"right"}}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, quam tempora! Voluptate, vitae! Ab harum hic incidunt nulla asperiores odit voluptates cum pariatur architecto fugit dolorum nam, placeat voluptatem nisi.</p>
   </Layout>
 )
 
