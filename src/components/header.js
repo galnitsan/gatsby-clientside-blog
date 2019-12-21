@@ -20,7 +20,7 @@ const Header = ( props ) => {
   return (
       <Navbar style={{lineHeight: "0"}} fixed="top" light expand="sm">
         <div className="container">
-        <NavbarBrand href="/">{props.siteTitle}</NavbarBrand>
+        <NavbarBrand style={{fontSize: "1rem"}} href="/">{props.siteTitle}</NavbarBrand>
         <NavbarToggler style={{padding: "0.1rem 0.5rem"}} onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
