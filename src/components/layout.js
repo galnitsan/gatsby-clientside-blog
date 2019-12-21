@@ -17,7 +17,8 @@ import { Row, Col } from 'reactstrap'
 
 
 
-const Layout = ({ children, pageTitle }) => { //props.pageTitle
+
+const Layout = ({ authorImageFluid, children, pageTitle, postAuthor }) => { //props.pageTitle
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -30,12 +31,16 @@ const Layout = ({ children, pageTitle }) => { //props.pageTitle
 
   return (
     <>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
       <Header siteTitle={data.site.siteMetadata.title} />
       <div className="container" id="content">
         <h1>{pageTitle}</h1>
         <Row>
           <Col md='8'>{children}</Col>
-          <Col md='4'><Sidebar /></Col>
+          <Col md='4'>
+            <Sidebar author={postAuthor} authorFluid={authorImageFluid} />
+            </Col>
         </Row>
         <footer className="rtl_footer">
            נבנה בעזרת
