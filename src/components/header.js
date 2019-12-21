@@ -18,10 +18,10 @@ const Header = ( props ) => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-      <Navbar fixed="top" light expand="sm">
+      <Navbar style={{lineHeight: "0"}} fixed="top" light expand="sm">
         <div className="container">
         <NavbarBrand href="/">{props.siteTitle}</NavbarBrand>
-        <NavbarToggler onClick={toggle} />
+        <NavbarToggler style={{padding: "0.1rem 0.5rem"}} onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
