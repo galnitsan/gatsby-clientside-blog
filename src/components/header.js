@@ -28,10 +28,10 @@ const Header = ( props ) => {
               <NavLink style={{padding: "1rem 1rem"}} href="/about/">אודותיי</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/tags/">תגיות</NavLink>
+              <NavLink style={{padding: "1rem 1rem"}} href="/tags/">תגיות</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/projects/">פרוייקטים</NavLink>
+              <NavLink style={{padding: "1rem 1rem"}} href="/projects/">פרוייקטים</NavLink>
             </NavItem>
           </Nav>
         </Collapse>
