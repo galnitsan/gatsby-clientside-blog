@@ -1,0 +1,111 @@
+.g-col {
+    padding: 0 1.5em;
+    position:relative;
+}
+.g-row:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+@media only screen {.g-col {
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+}}
+
+
+/* Grid settings for larger than 48em vieports*/
+
+@media only screen and (min-width: 48em) {
+    #g-product {
+        width: 66.66%;
+        left: 33.33%;
+    }
+    #g-sidebar {
+        width: 33.33%;
+        right: 66.66%;
+    }
+}    
+
+/* All remaining css */
+
+#g-container { 
+    width: 98%;
+    background-color: #f1da073f;
+    font-family: verdana;
+    font-size: 16px;
+    text-align: justify;        
+}
+
+#g-header {
+    background-color: rgb(240,16,16);
+    color: #F8CA4D;        
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0.5em;
+}    
+
+#g-photo {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}  
+
+#g-h1 {
+    margin:0.5em 0 0 0;
+    color: #f5f111;
+    
+}      
+
+#g-content {margin: 0 -1.5em;}
+
+.g-h2 {
+    background-color: rgb(240,16,16);
+    color: #f5f111;
+    padding: 0.5em 1em;
+    border-radius: 10px;
+    text-align: center;
+    
+}           
+
+#g-footer {
+    background-color: rgb(240,16,16);        
+    padding:0;        
+}
+
+.g-menu-item {
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center; 
+    color: #F8CA4D;
+    padding: 1em;
+    display: block;
+    border-top: 1px solid rgba(255,255,255,0.2); 
+    border-bottom: 1px solid rgba(0,0,0,0.3);         
+}
+
+.g-menu-item:hover {
+    text-decoration: underline;
+}
+
+.g-menu-item:last-of-type {border-bottom:none;}
+
+@media only screen and (min-width: 48em) {
+
+    #g-h1 {margin:0 0 0 2em;}
+
+    #g-footer {
+        display: flex;
+        justify-content: center;
+    }
+
+    #g-header {
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .g-menu-item {border: none;}
+}
