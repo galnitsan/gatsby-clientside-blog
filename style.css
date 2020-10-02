@@ -31,15 +31,15 @@
 
 #g-container { 
     width: 98%;
-    background-color: #f1da073f;
+    background-color: white;
     font-family: verdana;
     font-size: 16px;
     text-align: justify;        
 }
 
 #g-header {
-    background-color: rgb(240,16,16);
-    color: #F8CA4D;        
+    background-color: white;
+    color: black;        
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -48,22 +48,24 @@
 }    
 
 #g-photo {
-    max-width: 100%;
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
     height: auto;
     display: block;
 }  
 
 #g-h1 {
     margin:0.5em 0 0 0;
-    color: #f5f111;
+    color: black;
     
 }      
 
 #g-content {margin: 0 -1.5em;}
 
 .g-h2 {
-    background-color: rgb(240,16,16);
-    color: #f5f111;
+    background-color: rgb(245, 245, 245);
+    color: black;
     padding: 0.5em 1em;
     border-radius: 10px;
     text-align: center;
@@ -71,7 +73,7 @@
 }           
 
 #g-footer {
-    background-color: rgb(240,16,16);        
+    background-color:whitesmoke;        
     padding:0;        
 }
 
@@ -79,11 +81,12 @@
     text-decoration: none;
     font-weight: bold;
     text-align: center; 
-    color: #F8CA4D;
+    color: black;
     padding: 1em;
     display: block;
     border-top: 1px solid rgba(255,255,255,0.2); 
-    border-bottom: 1px solid rgba(0,0,0,0.3);         
+    border-bottom: 1px solid rgba(0,0,0,0.3);     
+       
 }
 
 .g-menu-item:hover {
